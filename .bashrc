@@ -1,6 +1,6 @@
 export NAMESPACE="f0ssel"
 export GOOGLE_PROJECT_ID="coder-dev-1"
-export PATH="$HOME/enterprise/devbin:$PATH"
+export PATH="$HOME/c/devbin:$PATH"
 
 # golang
 export GOPATH="$HOME/go"
