@@ -4,8 +4,8 @@
 yes | sudo pacman -S zsh
 if [ ! -d "$HOME/c" ] ; then
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-	sudo chsh -s $(readlink -f $(which zsh)) $USER
-fi
+fi	
+sudo chsh -s $(readlink -f $(which zsh)) $USER
 
 # dotfiles
 DOTFILES_CLONE_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
