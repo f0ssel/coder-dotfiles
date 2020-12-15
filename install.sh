@@ -14,7 +14,10 @@ for dotfile in "$DOTFILES_CLONE_PATH/".*; do
   ln -sf "$dotfile" "$HOME"
 done
 
-
 yes | sudo pacman -S zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo chsh -s $(readlink -f $(which zsh)) $USER
+
+if [ ! -d "$HOME/c" ] ; then
+    git clone git@github.com:cdr/c.git "$HOME/c"
+fi
