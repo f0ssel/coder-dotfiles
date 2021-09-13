@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # zsh
-yes | sudo apt update && sudo apt install zsh
+sudo apt update && yes | sudo apt install zsh
 if [ ! -d "$HOME/c" ] ; then
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi	
