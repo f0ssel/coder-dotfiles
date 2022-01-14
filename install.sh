@@ -7,6 +7,11 @@ if [ ! -d "$HOME/c" ] ; then
 fi	
 sudo chsh -s $(readlink -f $(which zsh)) $USER
 
+# aws cli
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+
 # dotfiles
 DOTFILES_CLONE_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
