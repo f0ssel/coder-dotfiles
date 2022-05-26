@@ -5,7 +5,7 @@ sudo apt update && yes | sudo apt install zsh unzip
 if [ ! -d "$HOME/c" ] ; then
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi	
-sudo chsh -s $(readlink -f $(which zsh)) $USER
+sudo chsh -s $(readlink -f $(which zsh)) $(whoami)
 
 # aws cli
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
