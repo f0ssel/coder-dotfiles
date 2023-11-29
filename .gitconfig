@@ -1,9 +1,5 @@
-
-[url "git@github.com:"]
-  insteadOf = https://github.com/	
-
 [user]
   email = garrett@coder.com
   name = Garrett
 [rerere]
-	enabled = true
+  enabled = true
